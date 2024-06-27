@@ -147,6 +147,8 @@ nav button a {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0px 10px;
     font-size: 26px;
     padding-top: 150px;
 }
@@ -162,7 +164,10 @@ nav button a {
     width: 34%;
     align-items: center;
     text-align: center;
-    padding: 45px 23px;
+    padding: 20px 23px;
+}
+.card-3 {
+    padding-bottom: 45px;
 }
 
 /* ******** CARDING Section Ended **********  */
@@ -172,7 +177,7 @@ nav button a {
 .sec-3-megazine {
     width: 99.5%;
     background-color: #fa0895;
-    height: 76vh;
+    /* height: 76vh; */
 }
 
 .megazine-img {
@@ -561,9 +566,9 @@ ul {
         background-size: cover;
     }
 
-    .sec-3-megazine {
+    /* .sec-3-megazine {
         height: 84vh;
-    }
+    } */
 
     .sec-3-heading {
         width: 50%;
@@ -621,7 +626,8 @@ ul {
     }
 
     .sec-3-img {
-        height: 446px;
+        height: 300px;
+        background-size: cover;
     }
 
     .megazine-img {
@@ -682,6 +688,7 @@ ul {
         width: 100%;
         margin-bottom: 25px;
     }
+    
 
 }
 
@@ -704,6 +711,7 @@ ul {
     .home-bg {
         justify-content: center;
         align-items: center;
+        background-size: contain;
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 30px;
@@ -728,8 +736,8 @@ ul {
     .sec-3-heading {
         text-align: center;
         width: 100%;
-        position: relative;
-        top: 215px;
+        /* position: relative;
+        top: 215px; */
     }
 
     .sec-3-heading h3 {
@@ -851,6 +859,10 @@ ul {
 
     .card-1 {
         width: 100%;
+        padding-bottom: 15px;
+    }
+
+    .card-3 {
         padding-bottom: 100px;
     }
 
@@ -875,7 +887,6 @@ ul {
 
 @media screen and (max-width: 375px) {
     .home-bg {
-        background-size: contain;
         padding-left: 15px;
         padding-right: 15px;
         padding-top: 30px;
@@ -904,18 +915,6 @@ ul {
         width: 100%;
         margin-bottom: 25px;
     }
-   .sec-2-carding {
-        width: 95%;
-        flex-wrap: wrap;
-        margin: auto;
-
-    }
-
-    .card-1 {
-        width: 100%;
-        padding-bottom: 100px;
-    }
-
 }
 
 @media screen and (max-width: 320px) {
@@ -924,6 +923,7 @@ ul {
     }
     .home-bg {
         padding-left: 8px;
+        background-size: contain;
         padding-right: 8px;
         padding-top: 0px;
     }
@@ -943,16 +943,31 @@ ul {
         margin: auto;
         width: 82%;
     }
-   .sec-2-carding {
-        width: 95%;
-        flex-wrap: wrap;
-        margin: auto;
+}
 
+/* ********Section 3 Megazine text Fix Media Queries ******** */
+
+@media screen and (max-width:768px) {
+    .sec-3-heading-big-screen {
+        display: none;
+        
+    }    
+    .megazine-img::before{
+        visibility: hidden;
     }
-
-    .card-1 {
+    .sec-3-heading-small-screen{
+        padding-top: 24px;
         width: 100%;
-        padding-bottom: 100px;
+        text-align: center;
     }
-
+    .sec-3-heading :nth-child(2) {
+        font-weight: 400 !important;
+        padding-bottom: 7px;
+    }
+    
+}
+@media screen and (min-width: 769px) {
+    .sec-3-heading-small-screen {
+        display:none;
+    }   
 }
