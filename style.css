@@ -981,6 +981,9 @@ ul {
         /* flex-wrap: wrap; */
         margin: auto;
     }
+    .carousel-control-next-icon{
+        visibility: hidden;
+    }
 }
 @media screen and (min-width: 769px) {
     .sec-3-heading-small-screen {
