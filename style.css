@@ -984,6 +984,9 @@ ul {
     .carousel-control-next-icon {
         display: none !important;
     }
+    .carousel-control-prev-icon {
+        display: none !important;
+    }
 }
 @media screen and (min-width: 769px) {
     .sec-3-heading-small-screen {
